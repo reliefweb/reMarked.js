@@ -418,13 +418,13 @@ reMarked = function(opts) {
 
 			cfg.h1_setext && (lib.h1 = lib.h_setext.extend({
 				wrapK: ["", function(kids) {
-					return "\n" + rep("=", kids.length);
+					return "\n" + rep("=", kids.length) + "\n";
 				}]
 			}));
 
 			cfg.h2_setext && (lib.h2 = lib.h_setext.extend({
 				wrapK: ["", function(kids) {
-					return "\n" + rep("-", kids.length);
+					return "\n" + rep("-", kids.length) + "\n";
 				}]
 			}));
 
